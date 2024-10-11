@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Конвертор с рубля в сом</title>
+</head>
+<body>
+<h1>Конвертор</h1>
+<form action="/convert" method="get">
+  <select name="valyta">
+    <option value="Рубль">рубль</option>
+    <option value="Доллар">доллар</option>
+    <option value="Дирхам">дирхам</option>
+    <option value="Сом">сом</option>
+  </select>
+  <input type="number" name="valyta1" placeholder="денег" required>
+  <select name="valyta2">
+    <option value="Дирхам">дирхам</option>
+    <option value="Сом">сом</option>
+    <option value="Рубль">рубль</option>
+    <option value="Доллар">доллар</option>
+  </select>
+  <input type="submit" formmethod="get" value="Посчитать">
+</form>
+</body>
+</html>
